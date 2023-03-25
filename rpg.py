@@ -8,17 +8,17 @@ class Personagem(SerVivo):
     super().__init__(vida, ataque)
     self.nome:str = nome
 
-class monstro(SerVivo):
+class Monstro(SerVivo):
   def __init__(self, vida, ataque, tipo):
     super().__init__(vida, ataque)
     self.tipo:str = tipo
 
-class lobo(monstro):
+class Lobo(Monstro):
   def __init__(self, vida, ataque, tipo, força):
     super().__init__(vida, ataque, tipo)
     self.força:int = força
   
-class goblin(monstro):
+class Goblin(Monstro):
   def __init__(self, vida, ataque, tipo, inteligencia):
     super().__init__(vida, ataque, tipo)
     self.interligencia:int = inteligencia
